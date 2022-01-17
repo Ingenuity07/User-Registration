@@ -21,8 +21,6 @@ const Login = ({ setUser }) => {
 
             localStorage.setItem('token', res.token)
 
-            console.log(res.data.user)
-
             setUser(res.data.user)
 
             navigate('/user')
